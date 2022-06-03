@@ -1,4 +1,3 @@
-import "dotenv/config";
 import debug from "debug";
 import fs from "fs/promises";
 import { getGmailService } from "../lib/google";

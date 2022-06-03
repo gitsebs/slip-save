@@ -1,18 +1,24 @@
 # SlipSave
 
-I am tried of saving each payslip manually every week.
+## Why?
 
-# How to use
+I am tried of saving payslips (from email attachments) manually every week. So I built a script to automate it.
 
-## Prerequisites
+## Getting Started
 
-- A Google Cloud Platform project with the API enabled. To create a project and enable an API, refer to [Create a project and enable the API](https://developers.google.com/workspace/guides/create-project)
+### Prerequisites
 
-- Authorization credentials for a desktop application. To learn how to create credentials for a desktop application, refer to [Create credentials](https://developers.google.com/workspace/guides/create-credentials).
+A Google Cloud Platform project with the API enabled. To create a project and enable an API, refer to [Create a project and enable the API](https://developers.google.com/workspace/guides/create-project)
 
-- A Google account with Gmail enabled.
+Ensure the Gmail API is enabled for your project. To enable the Gmail API, refer to [Enable the Gmail API](https://developers.google.com/gmail/api/quickstart/js)
 
-## Step 1: Generate tokens.json
+Authorization credentials for a desktop application. To learn how to create credentials for a desktop application, refer to [Create credentials](https://developers.google.com/workspace/guides/create-credentials).
+
+A Google account with Gmail enabled.
+
+## Usage
+
+### Step 1: Generate tokens.json
 
 ```bash
 # Run
@@ -28,7 +34,7 @@ https://accounts.google.com/o/oauth2/auth....
 
 The script will start up a local server to listen for callback from the Google authorization server. It will automatically generate a `tokens.json` file.
 
-## Step 2: Run the code
+### Step 2: Run the code
 
 ```bash
 # Run
@@ -49,3 +55,10 @@ main: writing file: ./payslips/2019-11-10 PaySlip.pdf +1s
 main: saved file: ./payslips/2019-11-10 PaySlip.pdf +1ms
 main: Saved 121 files +0ms
 ```
+
+---
+
+## TODO
+
+- [x] Build initial version
+- [ ] Build github actions workflow with cronjob

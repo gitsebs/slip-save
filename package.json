@@ -4,10 +4,8 @@
   "main": "index.js",
   "private": true,
   "dependencies": {
-    "axios": "^0.27.2",
     "dayjs": "^1.11.2",
     "debug": "^4.3.4",
-    "dotenv": "^16.0.1",
     "googleapis": "39",
     "supports-color": "^9.2.2",
     "ts-node": "^10.8.0",
