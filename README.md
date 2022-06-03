@@ -1,10 +1,10 @@
-# SlipSave
+# 🧾 SlipSave
 
-## Why?
+## 🤔 Why?
 
 I am tried of saving payslips (from email attachments) manually every week. So I built a script to automate it.
 
-## Getting Started
+## 🏁 Getting Started
 
 ### Prerequisites
 
@@ -16,7 +16,7 @@ Authorization credentials for a desktop application. To learn how to create cred
 
 A Google account with Gmail enabled.
 
-## Usage
+## 🚀 Usage
 
 ### Step 1: Generate tokens.json
 
@@ -58,7 +58,7 @@ main: Saved 121 files +0ms
 
 ---
 
-## TODO
+## 📜 TODO
 
 - [x] Build initial version
 - [ ] Build github actions workflow with cronjob
