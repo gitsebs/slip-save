@@ -12,7 +12,7 @@ I am tried of saving each payslip manually every week.
 
 - A Google account with Gmail enabled.
 
-## Step 1: Generate token.json
+## Step 1: Generate tokens.json
 
 ```bash
 # Run
@@ -26,12 +26,7 @@ Authorize this app by visiting this url:
 https://accounts.google.com/o/oauth2/auth....
 ```
 
-After authorizing the application, re-run the script with the authorization code set as an environment variable.
-
-```bash
-# Run
-CODE=****** yarn generate-tokens
-```
+The script will start up a local server to listen for callback from the Google authorization server. It will automatically generate a `tokens.json` file.
 
 ## Step 2: Run the code
 
