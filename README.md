@@ -12,35 +12,38 @@ I am tried of saving each payslip manually every week.
 
 - A Google account with Gmail enabled.
 
-## Step 1: Authorize this app and get a code from google
+## Step 1: Generate token.json
 
 ```bash
-yarn code
+# Run
+yarn generate-tokens
 ```
 
-save the token to `.env`
+If no authorization code is supplied in the `.env` file, the script will generate a url to authorize the application.
 
 ```
-CODE=<paste code here>
+Authorize this app by visiting this url:
+https://accounts.google.com/o/oauth2/auth....
 ```
 
-## 2. Generate token.json file
+After authorizing the application, re-run the script with the authorization code set as an environment variable.
 
 ```bash
-yarn token
+# Run
+CODE=****** yarn generate-tokens
 ```
 
-## 3. Run the code
+## Step 2: Run the code
 
 ```bash
+# Run
 yarn main
 ```
 
-Generates a folder `/payslips` and saves the pdfs in it.
+Generates a folder called `/payslips` and writes the pdf attachments into it.
 
-Example output:
-
-```
+```bash
+# Example output:
 ...
 
 main: message id: ************* +0ms

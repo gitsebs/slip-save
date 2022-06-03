@@ -14,9 +14,8 @@
     "typescript": "^4.7.2"
   },
   "scripts": {
-    "code": "ts-node scripts/code.ts",
-    "token": "ts-node scripts/token.ts",
-    "main": "ts-node src/main.ts"
+    "generate-tokens": "ts-node scripts/generate-tokens.ts",
+    "main": "DEBUG=main:* ts-node src/main.ts"
   },
   "devDependencies": {
     "@types/debug": "^4.1.7",
